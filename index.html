@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoPatas - Página Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+      text-align: center;
+      position: sticky; /* menú fijo */
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .card h3 {
+      margin: 10px 0;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a TecnoPatas</h1>
+    <p>Innovación y tecnología a tu alcance</p>
+  </header>
+
+  <!-- Menú de navegación fijo -->
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="desarrollo.html">Desarrollo Web</a>
+    <a href="soporte.html">Soporte Técnico</a>
+    <a href="consultoria.html">Consultoría</a>
+    <a href="#tickets">Tickets</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="card">
+      <img src="https://img.freepik.com/fotos-premium/imagen-fondo-tecnologica-muchos-aparatos-alta-tecnologia-elementos-digitales_1036693-23782.jpg" alt="Servicio 1">
+      <h3>Desarrollo Web</h3>
+      <p>Creación de páginas modernas e interactivas.</p>
+      <button onclick="window.location.href='desarrollo.html'">Ver más</button>
+    </div>
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.4G9E9dRQLAtPzluA3PVDRgHaFC?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Servicio 2">
+      <h3>Soporte Técnico</h3>
+      <p>Atención rápida y eficiente para tus sistemas.</p>
+      <button onclick="window.location.href='soporte.html'">Ver más</button>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/R.e020c1d5ccbbd93e4b3012bbbba58778?rik=%2f%2bImqY8R%2fW9ihQ&riu=http%3a%2f%2fsseal-soluciones.com%2fFotos%2fproducto1.jpeg&ehk=yrurXL95Ir0QWa59GUW9ZsZHRHDVfY80RYEpqx1MauM%3d&risl=&pid=ImgRaw&r=0" alt="Servicio 3">
+      <h3>Consultoría</h3>
+      <p>Asesoría en proyectos tecnológicos.</p>
+      <button onclick="window.location.href='consultoria.html'">Ver más</button>
+    </div>
+  </section>
+
+  <section id="tickets">
+    <h2>Tickets de Soporte</h2>
+    <form onsubmit="alert('Ticket enviado correctamente'); return false;">
+      <input type="text" placeholder="Nombre" required><br><br>
+      <input type="email" placeholder="Correo" required><br><br>
+      <textarea placeholder="Describe tu problema" required></textarea><br><br>
+      <button type="submit">Enviar Ticket</button>
+    </form>
+  </section>
+
+ <section id="contacto">
+  <h2>Contacto</h2>
+  <p>📧 Escríbenos a: 
+    <a href="mailto:contacto@tecnopatas.com">contacto@tecnopatas.com</a>
+  </p>
+  <p>📞 Llámanos al: 
+    <a href="tel:+50255555555">+502 55555555</a>
+  </p>
+  <p>📍 Ubícanos en: Escuintla, Escuintla</p>
+</section>
+
+</body>
+</html>
